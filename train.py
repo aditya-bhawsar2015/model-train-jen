@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 import joblib
 
 # Load diabetes dataset
-x, y = load_diabetes(return_X_y=True)
+X, y = load_diabetes(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 model = LinearRegression()
